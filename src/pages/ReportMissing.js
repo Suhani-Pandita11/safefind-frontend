@@ -20,10 +20,7 @@ function ReportMissing() {
     };
 
     const handleSubmit = async () => {
-        if (photos.length < 4) {
-            setError('⚠️ Please upload minimum 4 photos!');
-            return;
-        }
+        
         setLoading(true);
         setError('');
         try {
